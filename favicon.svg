@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="13" fill="#0a0d0f"/>
+  <rect x="3" y="3" width="58" height="58" rx="10" fill="none" stroke="#d8ff4f" stroke-width="3"/>
+  <text x="10" y="43" fill="#f3f5ed" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="-3">PR</text>
+  <circle cx="53" cy="12" r="4" fill="#ff7043"/>
+</svg>
