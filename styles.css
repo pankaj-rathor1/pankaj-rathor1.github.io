@@ -39,13 +39,20 @@ h1 em, .contact h2 em { font-family: Georgia, serif; font-weight: 400; color: va
 .button-secondary:hover { background: var(--ink); color: var(--bg); }
 .hero-panel { justify-self: stretch; border-left: 1px solid var(--line); padding-left: 4vw; }
 .orbit { width: min(24vw, 330px); aspect-ratio: 1; margin: 0 auto 44px; position: relative; display: grid; place-items: center; }
-.orbit-ring { position: absolute; border: 1px solid var(--line); border-radius: 50%; }
-.orbit-one { inset: 4%; animation: spin 18s linear infinite; border-top-color: var(--acid); }
-.orbit-two { inset: 22%; animation: spin 11s linear infinite reverse; border-right-color: var(--orange); }
+.orbit-ring { position: absolute; border: 1px solid var(--line); border-radius: 50%; transform-origin: 50% 50%; will-change: transform; }
+.orbit-one { inset: 4%; animation: orbit-spin 12s linear infinite; border-top-color: var(--acid); border-bottom-color: rgba(216, 255, 79, .35); }
+.orbit-two { inset: 22%; animation: orbit-spin-reverse 8s linear infinite; border-right-color: var(--orange); border-left-color: rgba(255, 112, 67, .35); }
 .orbit-one::before, .orbit-two::before { content: ""; position: absolute; width: 9px; height: 9px; background: var(--acid); border-radius: 50%; top: 12%; left: 12%; box-shadow: 0 0 22px var(--acid); }
 .orbit-two::before { background: var(--orange); box-shadow: 0 0 22px var(--orange); }
 .orbit-core { font: 800 clamp(36px, 5vw, 72px) var(--display); letter-spacing: -.09em; }
-@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes orbit-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
 .hero-metrics { border-top: 1px solid var(--line); }
 .hero-metrics > div { display: grid; grid-template-columns: 90px 1fr; gap: 20px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .hero-metrics strong { font: 700 28px var(--display); color: var(--acid); }
