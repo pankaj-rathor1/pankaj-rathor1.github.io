@@ -80,13 +80,15 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Pankaj Rathor, home"><span>PR</span></a>
+    <a class="brand" href="#top" aria-label="PR — Pankaj Rathor, home"><span>PR</span></a>
     <nav aria-label="Main navigation">
       <a href="#work">Work</a>
       <a href="#about">About</a>
@@ -96,7 +98,7 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy reveal">
+      <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> Available for the right opportunity</p>
         <h1 id="hero-title">I build systems that <em>hold up</em> in the real world.</h1>
         <p class="hero-intro">I’m Pankaj, a senior full-stack developer turning complex business requirements into fast, scalable products—from e-commerce platforms to operational software.</p>
@@ -105,7 +107,7 @@
           <a class="button button-secondary" href="Pankaj_Rathor_Resume.pdf" download>Download résumé <span aria-hidden="true">↘</span></a>
         </div>
       </div>
-      <div class="hero-panel reveal" aria-label="Professional overview">
+      <div class="hero-panel" aria-label="Professional overview">
         <div class="orbit" aria-hidden="true">
           <span class="orbit-ring orbit-one"></span>
           <span class="orbit-ring orbit-two"></span>
@@ -117,7 +119,7 @@
           <div><strong>15+</strong><span>Magento sites<br>delivered</span></div>
         </div>
       </div>
-      <p class="hero-location reveal">Ahmedabad, India <span>•</span> Open to India & international roles</p>
+      <p class="hero-location">Ahmedabad, India <span>•</span> Open to India & international roles</p>
     </section>
 
     <section class="proof-strip" aria-label="Core expertise">

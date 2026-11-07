@@ -6,8 +6,8 @@
   --line: rgba(243, 245, 237, .14);
   --acid: #d8ff4f;
   --orange: #ff7043;
-  --display: "Manrope", sans-serif;
-  --body: "DM Sans", sans-serif;
+  --display: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --body: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -117,7 +117,7 @@ h1 em, .contact h2 em { font-family: Georgia, serif; font-weight: 400; color: va
 .text-link { color: var(--acid); display: inline-block; margin-top: 25px; font-size: 14px; font-weight: 600; }
 
 .contact { min-height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 100px 22px; background: var(--orange); color: #111; }
-.contact .eyebrow { color: rgba(17,17,17,.7); }
+.contact .eyebrow { color: #111; }
 .contact .status-dot { background: #111; box-shadow: 0 0 0 5px rgba(17,17,17,.1); }
 .contact h2 { font-size: clamp(52px, 9vw, 132px); line-height: .9; letter-spacing: -.075em; margin: 40px 0 65px; }
 .contact h2 em { color: #111; }
