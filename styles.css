@@ -73,9 +73,7 @@ h1 em, .contact h2 em { font-family: Georgia, serif; font-weight: 400; color: va
 .case-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 32px 0 0; }
 .case-chips li { border: 1px solid var(--line); padding: 7px 11px; color: var(--muted); font-size: 11px; }
 .case-result { border-left: 1px solid var(--line); padding-left: 3vw; }
-.case-result strong { display: block; font: 700 clamp(55px, 7vw, 98px) var(--display); letter-spacing: -.08em; color: var(--acid); line-height: 1; }
-.case-result > span { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
-.case-result p { margin-top: 60px; font-size: 13px !important; }
+.case-result p { margin-top: 0; font-size: 13px !important; }
 .case-grid { display: grid; grid-template-columns: 1fr 1fr; }
 .case-grid .case-study { min-height: 420px; margin-top: -1px; }
 .case-grid .case-study:nth-child(even) { margin-left: -1px; }
