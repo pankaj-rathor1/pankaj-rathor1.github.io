@@ -53,13 +53,6 @@ h1 em, .contact h2 em { font-family: Georgia, serif; font-weight: 400; color: va
 .hero-location span { color: var(--orange); margin: 0 9px; }
 
 .proof-strip { overflow: hidden; border-block: 1px solid var(--line); background: var(--acid); color: var(--bg); }
-.marquee { width: max-content; display: flex; animation: marquee 18s linear infinite; font: 700 14px var(--display); text-transform: uppercase; letter-spacing: .08em; will-change: transform; }
-.marquee-track { flex-shrink: 0; display: flex; align-items: center; gap: 30px; padding: 14px 15px; }
-.marquee i { font-style: normal; color: var(--orange); }
-@keyframes marquee {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
-}
 
 .section { padding: clamp(70px, 8vw, 70px) clamp(22px, 5vw, 76px); }
 .section-heading { display: grid; grid-template-columns: .62fr 1.38fr; gap: 5vw; margin-bottom: 58px; }
